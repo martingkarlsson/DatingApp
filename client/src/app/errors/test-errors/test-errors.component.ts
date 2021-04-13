@@ -16,40 +16,40 @@ export class TestErrorsComponent implements OnInit {
   }
 
   get404Errors() {
-    this.http.get(this.baseUrl + 'buggy/not-found').subscribe(resopnse => {
-      console.log(resopnse);
+    this.http.get(this.baseUrl + 'buggy/not-found').subscribe(response => {
+      console.log(response);
     }, error => {
       console.log(error);
     })
   }
 
   get400Errors() {
-    this.http.get(this.baseUrl + 'buggy/bad-request').subscribe(resopnse => {
-      console.log(resopnse);
+    this.http.get(this.baseUrl + 'buggy/bad-request').subscribe(response => {
+      console.log(response);
     }, error => {
       console.log(error);
     })
   }
 
   get500Errors() {
-    this.http.get(this.baseUrl + 'buggy/server-error').subscribe(resopnse => {
-      console.log(resopnse);
+    this.http.get(this.baseUrl + 'buggy/server-error').subscribe(response => {
+      console.log(response);
     }, error => {
       console.log(error);
     })
   }
 
   get401Errors() {
-    this.http.get(this.baseUrl + 'buggy/auth').subscribe(resopnse => {
-      console.log(resopnse);
+    this.http.get(this.baseUrl + 'buggy/auth').subscribe(response => {
+      console.log(response);
     }, error => {
       console.log(error);
     })
   }
 
   get400ValidationErrors() {
-    this.http.post(this.baseUrl + 'account/register', {}).subscribe(resopnse => {
-      console.log(resopnse);
+    this.http.post(this.baseUrl + 'account/register', {}).subscribe(response => {
+      console.log(response);
     }, error => {
       console.log(error);
       this.validationErrors = error;

@@ -7,8 +7,18 @@ form input {
     cursor: pointer;
 }
 
-img {
+.userImage {
     max-height: 50px;
     border: 2px solid #fff;
     display: inline;
 }
+
+.omniaLogo img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+.omniaLogo span {
+    vertical-align: bottom;
+}
+

@@ -12,6 +12,7 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class NavComponent implements OnInit {
   model: any = {}
+  omniaLoggoUrl: './../../assets/omnia_logo.png';
 
   constructor(public accountService: AccountService,
     private router: Router,
