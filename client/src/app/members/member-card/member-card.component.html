@@ -5,7 +5,11 @@
             <li class="list-inline-item">
                 <button class="btn btn-primary" routerLink="/members/{{member.username}}"><i class="fa fa-user"></i></button>
                 <button (click)='addLike(member)' class="btn btn-primary"><i class="fa fa-heart"></i></button>
-                <button class="btn btn-primary"><i class="fa fa-envelope"></i></button>
+                <button 
+                    [queryParams]='{tab: 3}'
+                    routerLink='/members/{{member.username}}' 
+                    class="btn btn-primary">
+                    <i class="fa fa-envelope"></i></button>
             </li>
         </ul>
     </div>
